@@ -7,11 +7,13 @@
 //
 
 #import "DetailViewController.h"
+#import "WebViewController.h"
 
 @interface DetailViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *rsvpLabel;
 @property (weak, nonatomic) IBOutlet UILabel *hostGroupLabel;
-@property (weak, nonatomic) IBOutlet UILabel *hyperlinkLabel;
+@property (weak, nonatomic) IBOutlet UIButton *myHyperlinkButton;
+
 
 @property (weak, nonatomic) IBOutlet UIWebView *descriptionWebView;
 
@@ -27,8 +29,19 @@
     
     self.rsvpLabel.text = self.rsvp;
     self.hostGroupLabel.text = self.hostGroup;
-    self.hyperlinkLabel.text = self.hyperlink;
+    self.myHyperlinkButton.titleLabel.text = self.hyperlink;
     [self.descriptionWebView loadHTMLString:self.description baseURL:nil];
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSURL *url = [NSURL URLWithString:self.hyperlink];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    
+    WebViewController *destination = segue.destinationViewController;
+    destination.webViewURLRequest = urlRequest;
+    
     
 }
 @end

@@ -65,6 +65,7 @@
     NSIndexPath *indexPath = [myTableView indexPathForSelectedRow];
     
     DetailViewController *destination = segue.destinationViewController;
+    
     destination.navigationItem.title = [meetupResults[indexPath.row]objectForKey:@"name"];
     destination.rsvp = [NSString stringWithFormat:@"%@",[meetupResults[indexPath.row]objectForKey:@"yes_rsvp_count"]];
     destination.hostGroup = [[meetupResults[indexPath.row]objectForKey:@"group"]objectForKey:@"name"];

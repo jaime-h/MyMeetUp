@@ -16,27 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vb6-Ij-rGp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vb6-Ij-rGp">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProtoTypeCellIdentifier" textLabel="qJg-fx-PnK" detailTextLabel="sv7-bv-nXm" rowHeight="87" style="IBUITableViewCellStyleSubtitle" id="nTy-C7-IGW">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="87"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProtoTypeCellIdentifier" textLabel="qJg-fx-PnK" detailTextLabel="sv7-bv-nXm" rowHeight="50" style="IBUITableViewCellStyleSubtitle" id="nTy-C7-IGW">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nTy-C7-IGW" id="dgy-va-JLq">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="86"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qJg-fx-PnK">
-                                                    <rect key="frame" x="15" y="25" width="34" height="22"/>
+                                                    <rect key="frame" x="15" y="6" width="34" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sv7-bv-nXm">
-                                                    <rect key="frame" x="15" y="47" width="43" height="15"/>
+                                                    <rect key="frame" x="15" y="28" width="43" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -91,17 +91,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU2-Ru-fLW">
-                                <rect key="frame" x="20" y="207" width="280" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7M-1s-me6">
                                 <rect key="frame" x="20" y="287" width="280" height="246"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6Q-1o-nU5">
+                                <rect key="frame" x="20" y="216" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zHk-8i-09I" kind="push" id="lNM-P4-KS2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -109,7 +113,7 @@
                     <connections>
                         <outlet property="descriptionWebView" destination="d7M-1s-me6" id="ZGD-4O-ARS"/>
                         <outlet property="hostGroupLabel" destination="waW-6C-lOb" id="sKq-6U-tzf"/>
-                        <outlet property="hyperlinkLabel" destination="yU2-Ru-fLW" id="DhM-fE-L2E"/>
+                        <outlet property="myHyperlinkButton" destination="a6Q-1o-nU5" id="b5g-nC-j1o"/>
                         <outlet property="rsvpLabel" destination="4BM-yK-ji7" id="UoR-xo-hZa"/>
                     </connections>
                 </viewController>
@@ -117,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="1106" y="140"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="aq4-AJ-ivo">
             <objects>
-                <viewController id="zHk-8i-09I" sceneMemberID="viewController">
+                <viewController id="zHk-8i-09I" customClass="WebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kpK-Pl-2LD"/>
                         <viewControllerLayoutGuide type="bottom" id="Ann-4F-8Q0"/>
@@ -137,6 +141,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3I6-K9-1Uc"/>
+                    <connections>
+                        <outlet property="myWebView" destination="XWm-wJ-UsZ" id="M2I-Xr-Lau"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXg-8g-KZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
