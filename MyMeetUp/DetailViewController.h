@@ -10,4 +10,10 @@
 
 @interface DetailViewController : UIViewController
 
+@property (strong, nonatomic) NSString *eventName;
+@property (strong, nonatomic) NSString *rsvp;
+@property (strong, nonatomic) NSString *hostGroup;
+@property (strong, nonatomic) NSString *description;
+@property (strong, nonatomic) NSString *hyperlink;
+
 @end

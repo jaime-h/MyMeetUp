@@ -21,6 +21,7 @@
 		6F9AE72F18E0B06700637A99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9AE71118E0B06700637A99 /* UIKit.framework */; };
 		6F9AE73718E0B06800637A99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AE73518E0B06800637A99 /* InfoPlist.strings */; };
 		6F9AE73918E0B06800637A99 /* MyMeetUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9AE73818E0B06800637A99 /* MyMeetUpTests.m */; };
+		6FA025C918E0C69600CF340C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA025C818E0C69600CF340C /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		6F9AE73418E0B06800637A99 /* MyMeetUpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyMeetUpTests-Info.plist"; sourceTree = "<group>"; };
 		6F9AE73618E0B06800637A99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6F9AE73818E0B06800637A99 /* MyMeetUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMeetUpTests.m; sourceTree = "<group>"; };
+		6FA025C718E0C69600CF340C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6FA025C818E0C69600CF340C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				6F9AE71C18E0B06700637A99 /* AppDelegate.h */,
 				6F9AE71D18E0B06700637A99 /* AppDelegate.m */,
 				6F9AE71F18E0B06700637A99 /* Main.storyboard */,
+				6FA025C718E0C69600CF340C /* DetailViewController.h */,
+				6FA025C818E0C69600CF340C /* DetailViewController.m */,
 				6F9AE72218E0B06700637A99 /* ViewController.h */,
 				6F9AE72318E0B06700637A99 /* ViewController.m */,
 				6F9AE72518E0B06700637A99 /* Images.xcassets */,
@@ -252,6 +257,7 @@
 				6F9AE72418E0B06700637A99 /* ViewController.m in Sources */,
 				6F9AE71E18E0B06700637A99 /* AppDelegate.m in Sources */,
 				6F9AE71A18E0B06700637A99 /* main.m in Sources */,
+				6FA025C918E0C69600CF340C /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +462,7 @@
 				6F9AE73E18E0B06800637A99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F9AE73F18E0B06800637A99 /* Build configuration list for PBXNativeTarget "MyMeetUpTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				6F9AE74118E0B06800637A99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
